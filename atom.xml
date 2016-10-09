@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-09T13:22:19.422Z</updated>
+  <updated>2016-10-09T13:35:54.486Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="http://yoursite.com/2016/10/09/react-early-know/"/>
     <id>http://yoursite.com/2016/10/09/react-early-know/</id>
     <published>2016-10-09T12:17:35.000Z</published>
-    <updated>2016-10-09T13:22:19.422Z</updated>
+    <updated>2016-10-09T13:35:54.486Z</updated>
     
     <content type="html"><![CDATA[<h2 id="react是什么"><a href="#react是什么" class="headerlink" title="react是什么"></a>react是什么</h2><p>React是Facebook和Instagram用来创建用户界面的JavaScript库。很多人将React认为是MVC中的V。 React的创建是为了解决一个问题：如何构建一个数据交互频繁的大型应用程序？为了实现这个目标，React运用了两个思想：</p>
+<a id="more"></a>
 <h3 id="实时更新数据"><a href="#实时更新数据" class="headerlink" title="实时更新数据"></a>实时更新数据</h3><p>React使得展现数据变得简单，并且当数据改变时，React能自动保持UI的更新。</p>
 <h3 id="构建通用组件"><a href="#构建通用组件" class="headerlink" title="构建通用组件"></a>构建通用组件</h3><p>React旨在构建通用组件。试试想，写React代码就是在构建组件。因为组件式封装的，所以组件使得代码的复用性、测试性和关注分离变得简单。</p>
 <h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p><strong>React.js</strong><br>React.js 是 React 的核心库，在应用中必须先加载核心库。</p>
@@ -39,7 +40,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;react是什么&quot;&gt;&lt;a href=&quot;#react是什么&quot; class=&quot;headerlink&quot; title=&quot;react是什么&quot;&gt;&lt;/a&gt;react是什么&lt;/h2&gt;&lt;p&gt;React是Facebook和Instagram用来创建用户界面的JavaScript库。很
+      &lt;h2 id=&quot;react是什么&quot;&gt;&lt;a href=&quot;#react是什么&quot; class=&quot;headerlink&quot; title=&quot;react是什么&quot;&gt;&lt;/a&gt;react是什么&lt;/h2&gt;&lt;p&gt;React是Facebook和Instagram用来创建用户界面的JavaScript库。很多人将React认为是MVC中的V。 React的创建是为了解决一个问题：如何构建一个数据交互频繁的大型应用程序？为了实现这个目标，React运用了两个思想：&lt;/p&gt;
     
     </summary>
     
