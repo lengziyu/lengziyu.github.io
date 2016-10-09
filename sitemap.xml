@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/10/09/react-early-know/</loc>
+    
+    <lastmod>2016-10-09T13:22:19.422Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2016-10-09T11:35:19.220Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/10/08/webpack-use-expo/</loc>
     
-    <lastmod>2016-10-08T13:56:50.482Z</lastmod>
+    <lastmod>2016-10-09T11:27:51.205Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2016/10/08/hello-world/</loc>
     
-    <lastmod>2016-10-08T10:57:39.537Z</lastmod>
+    <lastmod>2016-10-09T11:20:18.629Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2016-10-09T11:17:30.816Z</lastmod>
     
   </url>
   

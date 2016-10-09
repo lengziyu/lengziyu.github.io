@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-08T13:56:50.482Z</updated>
+  <updated>2016-10-09T13:22:19.422Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>React 学习笔记</title>
+    <link href="http://yoursite.com/2016/10/09/react-early-know/"/>
+    <id>http://yoursite.com/2016/10/09/react-early-know/</id>
+    <published>2016-10-09T12:17:35.000Z</published>
+    <updated>2016-10-09T13:22:19.422Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="react是什么"><a href="#react是什么" class="headerlink" title="react是什么"></a>react是什么</h2><p>React是Facebook和Instagram用来创建用户界面的JavaScript库。很多人将React认为是MVC中的V。 React的创建是为了解决一个问题：如何构建一个数据交互频繁的大型应用程序？为了实现这个目标，React运用了两个思想：</p>
+<h3 id="实时更新数据"><a href="#实时更新数据" class="headerlink" title="实时更新数据"></a>实时更新数据</h3><p>React使得展现数据变得简单，并且当数据改变时，React能自动保持UI的更新。</p>
+<h3 id="构建通用组件"><a href="#构建通用组件" class="headerlink" title="构建通用组件"></a>构建通用组件</h3><p>React旨在构建通用组件。试试想，写React代码就是在构建组件。因为组件式封装的，所以组件使得代码的复用性、测试性和关注分离变得简单。</p>
+<h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p><strong>React.js</strong><br>React.js 是 React 的核心库，在应用中必须先加载核心库。</p>
+<p><strong>ReactDOM.js</strong><br>ReactDOM.js 是 React 的 DOM 渲染器，React 将核心库和渲染器分离开了，为了在 web 页面中显示开发的组件，需要调用 ReactDOM.render 方法， 第一个参数是 React 组件，第二个参数为 HTMLElement。</p>
+<p><strong>JSX</strong><br>JSX 是 React 自定义的语法，最终 JSX 会转化为 JS 运行于页面当中。</p>
+<p><strong>组件</strong><br>组件是 React 中的核心概念，页面当中的所有元素都是通过 React 组件来表达， 我们将要写的 React 代码绝大部分都是在做 React 组件的开发。</p>
+<p><strong>VIRTUAL DOM</strong><br>React 抽象出来的虚拟 DOM 树，虚拟树是 React 高性能的关键。</p>
+<p><strong>单向数据流：one-way reactive data flow</strong><br>React 应用的核心设计模式，数据流向自顶向下</p>
+<h3 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h3><p>创建一个简单的 <code>Hello World</code>，新建 index.html：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>React<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"example"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/react.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/JSXTransformer.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/app.js"</span> <span class="attr">type</span>=<span class="string">"text/jsx"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>React独创了一种JS、CSS和HTML混写的JSX格式，可以通过在页面中引入JSXTransformer这个文件进行客户端的编译，不过还是推荐在服务端编译。<br>app.js :<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> HelloMessage = React.createClass(&#123;</div><div class="line">  <span class="attr">render</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>Hello &#123;this.props.name&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>;</div><div class="line">  &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">React.render(</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">HelloMessage</span> <span class="attr">name</span>=<span class="string">"John"</span> /&gt;</span>,</span></div><div class="line">  document.getElementById('container')</div><div class="line">);</div></pre></td></tr></table></figure></p>
+<h3 id="React-createClass"><a href="#React-createClass" class="headerlink" title="React.createClass"></a>React.createClass</h3><p>用来创建一个组件类，编写React代码主要就是构建通用的组件。</p>
+<h3 id="React-render"><a href="#React-render" class="headerlink" title="React.render"></a>React.render</h3><p>将React的模板转化为HTML，并插入到相应的DOM结构中。要注意的是，React的渲染函数并不是简单地把HTML元素复制到页面上，而是维护了一张Virtual Dom映射表。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;react是什么&quot;&gt;&lt;a href=&quot;#react是什么&quot; class=&quot;headerlink&quot; title=&quot;react是什么&quot;&gt;&lt;/a&gt;react是什么&lt;/h2&gt;&lt;p&gt;React是Facebook和Instagram用来创建用户界面的JavaScript库。很
+    
+    </summary>
+    
+    
+      <category term="categories" scheme="http://yoursite.com/tags/categories/"/>
+    
+  </entry>
+  
+  <entry>
     <title>webpack基本使用配置[基础篇]</title>
     <link href="http://yoursite.com/2016/10/08/webpack-use-expo/"/>
     <id>http://yoursite.com/2016/10/08/webpack-use-expo/</id>
     <published>2016-10-08T12:28:47.000Z</published>
-    <updated>2016-10-08T13:56:50.482Z</updated>
+    <updated>2016-10-09T11:27:51.205Z</updated>
     
     <content type="html"><![CDATA[<h3 id="webpack是什么"><a href="#webpack是什么" class="headerlink" title="webpack是什么"></a>webpack是什么</h3><div class="foreword">webpack是一个前端资源模块化管理和打包工具。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。还可以将按需加载的模块进行代码分隔，等到实际需要的时候再异步加载。通过 loader 的转换，任何形式的资源都可以视作模块，比如 CommonJs 模块、 AMD 模块、 ES6 模块、CSS、图片、 JSON、Coffeescript、 LESS 等。还可以结合gulp使用，不冲突。<br></div>
 
@@ -58,6 +91,8 @@
     </summary>
     
     
+      <category term="webpack" scheme="http://yoursite.com/tags/webpack/"/>
+    
   </entry>
   
   <entry>
@@ -65,7 +100,7 @@
     <link href="http://yoursite.com/2016/10/08/hello-world/"/>
     <id>http://yoursite.com/2016/10/08/hello-world/</id>
     <published>2016-10-08T10:57:39.537Z</published>
-    <updated>2016-10-08T10:57:39.537Z</updated>
+    <updated>2016-10-09T11:20:18.629Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
@@ -83,6 +118,10 @@
       &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
     
     </summary>
+    
+      <category term="foo" scheme="http://yoursite.com/categories/foo/"/>
+    
+      <category term="bar" scheme="http://yoursite.com/categories/foo/bar/"/>
     
     
   </entry>
