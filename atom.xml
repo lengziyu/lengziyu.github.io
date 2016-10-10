@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2016-10-09T13:35:54.486Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://blog.lengziyu.com/"/>
+  <updated>2016-10-10T11:20:56.522Z</updated>
+  <id>http://blog.lengziyu.com/</id>
   
   <author>
     <name>lengziyu</name>
@@ -16,11 +16,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>React 数据流 Props 和 State</title>
+    <link href="http://blog.lengziyu.com/2016/10/10/react-props-and-state/"/>
+    <id>http://blog.lengziyu.com/2016/10/10/react-props-and-state/</id>
+    <published>2016-10-10T11:17:09.000Z</published>
+    <updated>2016-10-10T11:20:56.522Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="react" scheme="http://blog.lengziyu.com/categories/react/"/>
+    
+    
+      <category term="react" scheme="http://blog.lengziyu.com/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
     <title>React 学习笔记</title>
-    <link href="http://yoursite.com/2016/10/09/react-early-know/"/>
-    <id>http://yoursite.com/2016/10/09/react-early-know/</id>
+    <link href="http://blog.lengziyu.com/2016/10/09/react-early-know/"/>
+    <id>http://blog.lengziyu.com/2016/10/09/react-early-know/</id>
     <published>2016-10-09T12:17:35.000Z</published>
-    <updated>2016-10-09T13:35:54.486Z</updated>
+    <updated>2016-10-10T11:05:37.326Z</updated>
     
     <content type="html"><![CDATA[<h2 id="react是什么"><a href="#react是什么" class="headerlink" title="react是什么"></a>react是什么</h2><p>React是Facebook和Instagram用来创建用户界面的JavaScript库。很多人将React认为是MVC中的V。 React的创建是为了解决一个问题：如何构建一个数据交互频繁的大型应用程序？为了实现这个目标，React运用了两个思想：</p>
 <a id="more"></a>
@@ -45,14 +63,14 @@
     </summary>
     
     
-      <category term="categories" scheme="http://yoursite.com/tags/categories/"/>
+      <category term="react" scheme="http://blog.lengziyu.com/tags/react/"/>
     
   </entry>
   
   <entry>
     <title>webpack基本使用配置[基础篇]</title>
-    <link href="http://yoursite.com/2016/10/08/webpack-use-expo/"/>
-    <id>http://yoursite.com/2016/10/08/webpack-use-expo/</id>
+    <link href="http://blog.lengziyu.com/2016/10/08/webpack-use-expo/"/>
+    <id>http://blog.lengziyu.com/2016/10/08/webpack-use-expo/</id>
     <published>2016-10-08T12:28:47.000Z</published>
     <updated>2016-10-09T11:27:51.205Z</updated>
     
@@ -92,16 +110,16 @@
     </summary>
     
     
-      <category term="webpack" scheme="http://yoursite.com/tags/webpack/"/>
+      <category term="webpack" scheme="http://blog.lengziyu.com/tags/webpack/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/10/08/hello-world/"/>
-    <id>http://yoursite.com/2016/10/08/hello-world/</id>
+    <link href="http://blog.lengziyu.com/2016/10/08/hello-world/"/>
+    <id>http://blog.lengziyu.com/2016/10/08/hello-world/</id>
     <published>2016-10-08T10:57:39.537Z</published>
-    <updated>2016-10-09T11:20:18.629Z</updated>
+    <updated>2016-10-10T11:17:37.833Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
@@ -119,10 +137,6 @@
       &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
     
     </summary>
-    
-      <category term="foo" scheme="http://yoursite.com/categories/foo/"/>
-    
-      <category term="bar" scheme="http://yoursite.com/categories/foo/bar/"/>
     
     
   </entry>

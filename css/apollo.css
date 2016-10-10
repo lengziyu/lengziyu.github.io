@@ -5,5 +5,61 @@
   }
 }
 .post-content h2, .post-content h3{
-  font-size: 18px;
+  font-size: 16px;
+  color: #555;
+}
+footer .copyright p{
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+.post-item span{
+  float: right;
+  color: #999;
+}
+.archive .post-title-link{
+  margin-left: 0;
+}
+.archive .post-item{
+  padding-left: 20px;
+}
+.post-tag{
+  margin-left: 0.5rem;
+  font-size: 12px;
+  color: #42b983;
+  display: inline-block;
+  vertical-align: text-top;
+}
+.post-block .post-title{
+  font-size: 1.2em;
+}
+.cp-tip {
+    position: relative;
+    margin: 10px 0;
+    padding: 8px 10px;
+    border-left: 4px solid #E36B6B;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: #f8f8f8;
+    font-size: 12px;
+}
+.cp-tip .cp-author, .cp-tip .cp-url, .cp-tip .cp-note, .cp-tip .cp-post, .cp-tip .cp-post-url {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 0;
+}
+.tag-list a{
+  margin-left: 20px;
+}
+.tag-list a span{
+  color: #42b983;
+}
+.tags-head{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+body{
+  font-family: 14px;
+  color: #34495e;
+  font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
 }

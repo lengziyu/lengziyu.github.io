@@ -2,35 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2016/10/09/react-early-know/</loc>
+    <loc>http://blog.lengziyu.com/2016/10/10/react-props-and-state/</loc>
     
-    <lastmod>2016-10-09T13:35:54.486Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
-    
-    <lastmod>2016-10-09T11:35:19.220Z</lastmod>
+    <lastmod>2016-10-10T11:20:56.522Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/10/08/webpack-use-expo/</loc>
+    <loc>http://blog.lengziyu.com/2016/10/08/hello-world/</loc>
+    
+    <lastmod>2016-10-10T11:17:37.833Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.lengziyu.com/tags/index.html</loc>
+    
+    <lastmod>2016-10-10T11:09:30.992Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.lengziyu.com/2016/10/09/react-early-know/</loc>
+    
+    <lastmod>2016-10-10T11:05:37.326Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.lengziyu.com/2016/10/08/webpack-use-expo/</loc>
     
     <lastmod>2016-10-09T11:27:51.205Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/10/08/hello-world/</loc>
-    
-    <lastmod>2016-10-09T11:20:18.629Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
+    <loc>http://blog.lengziyu.com/categories/index.html</loc>
     
     <lastmod>2016-10-09T11:17:30.816Z</lastmod>
     
