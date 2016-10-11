@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.lengziyu.com/2016/10/11/react-props-and-state-plus/</loc>
+    
+    <lastmod>2016-10-11T11:15:53.339Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.lengziyu.com/2016/10/10/react-props-and-state/</loc>
     
     <lastmod>2016-10-10T14:07:08.780Z</lastmod>

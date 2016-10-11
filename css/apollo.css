@@ -7,6 +7,7 @@
 .post-content h2, .post-content h3{
   font-size: 16px;
   color: #555;
+  margin-bottom: 2px;
 }
 footer .copyright p{
   margin-top: 40px;
@@ -62,4 +63,10 @@ body{
   font-family: 14px;
   color: #34495e;
   font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+}
+.post-content p{
+  font-size: 14px;
+}
+.highlight{
+  max-height: 450px;
 }
