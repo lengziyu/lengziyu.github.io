@@ -62,11 +62,11 @@
   </entry>
   
   <entry>
-    <title>React 数据流 Props 和 State</title>
+    <title>React 数据流 Props 和 State 【基础介绍】</title>
     <link href="http://blog.lengziyu.com/2016/10/10/react-props-and-state/"/>
     <id>http://blog.lengziyu.com/2016/10/10/react-props-and-state/</id>
     <published>2016-10-10T11:17:09.000Z</published>
-    <updated>2016-10-10T14:07:08.780Z</updated>
+    <updated>2016-10-11T11:20:53.086Z</updated>
     
     <content type="html"><![CDATA[<p>使用React我们首先要知道如何传递数据，组件如何沟通，才能展示我们想要的数据。下面的列子都是使用ES6语法，不懂的同学需要先学习ES6语法。</p>
 <a id="more"></a>
