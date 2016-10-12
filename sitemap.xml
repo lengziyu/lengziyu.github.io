@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.lengziyu.com/2016/10/12/react-jsx-grammar/</loc>
+    
+    <lastmod>2016-10-12T12:42:38.943Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.lengziyu.com/2016/10/10/react-props-and-state/</loc>
     
     <lastmod>2016-10-11T11:21:38.531Z</lastmod>
