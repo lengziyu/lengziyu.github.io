@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.lengziyu.com/2016/10/14/yarn-a-new-javascript-pkg/</loc>
+    
+    <lastmod>2016-10-14T15:59:02.536Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.lengziyu.com/2016/10/13/Redux-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     
     <lastmod>2016-10-13T12:43:41.608Z</lastmod>
