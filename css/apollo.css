@@ -68,11 +68,22 @@ body{
   font-size: 14px;
 }
 .highlight{
-  max-height: 450px;
+  max-height: 530px;
 }
 table thead th{
   text-align: left
 }
 table tbody tr:nth-child(2n){
   background-color: #f7f7f7;
+}
+.post-content .tip{
+  margin: 1em 0;
+}
+.read-more{
+  display: block;
+  margin-top: 8px;
+}
+.post-block .post-info{
+  margin: .8em 0;
+  color: #999;
 }

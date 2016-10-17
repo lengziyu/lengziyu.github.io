@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.lengziyu.com/2016/10/17/ES6-to-let-and-const/</loc>
+    
+    <lastmod>2016-10-17T14:12:03.799Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.lengziyu.com/2016/10/14/yarn-a-new-javascript-pkg/</loc>
     
     <lastmod>2016-10-14T16:04:01.248Z</lastmod>
