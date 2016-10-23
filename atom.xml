@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.lengziyu.com/"/>
-  <updated>2016-10-20T12:26:55.822Z</updated>
+  <updated>2016-10-23T12:52:31.104Z</updated>
   <id>http://blog.lengziyu.com/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>fetch 学习笔记</title>
+    <link href="http://blog.lengziyu.com/2016/10/23/ajax-to-fetch/"/>
+    <id>http://blog.lengziyu.com/2016/10/23/ajax-to-fetch/</id>
+    <published>2016-10-23T11:58:14.000Z</published>
+    <updated>2016-10-23T12:52:31.104Z</updated>
+    
+    <content type="html"><![CDATA[<p>XMLHttpRequest 是一个设计粗糙的 API，不符合关注分离（Separation of Concerns）的原则，配置和调用方式非常混乱，而且基于事件的异步模型写起来也没有现代的 Promise，generator/yield，async/await 友好。<br><a id="more"></a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>npm ：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm <span class="keyword">install</span> whatwg-<span class="keyword">fetch</span> <span class="comment">--save</span></div></pre></td></tr></table></figure></p>
+<p>如果你项目在node.js环境运行，可以使用 <a href="https://github.com/bitinn/node-fetch" target="_blank" rel="external">node-fetch</a>.</p>
+<p>对于 babel 和 es2015+，可以这样导入 fetch：<br><figure class="highlight gams"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">import <span class="string">'whatwg-fetch'</span>;</div><div class="line"><span class="function"><span class="title">fetch</span>(<span class="params">...</span>)</span>;</div></pre></td></tr></table></figure></p>
+<h2 id="兼容性及解决方案"><a href="#兼容性及解决方案" class="headerlink" title="兼容性及解决方案"></a>兼容性及解决方案</h2><p>原生支持率并不高，幸运的是，引入下面这些 <code>polyfill</code> 后可以完美支持 IE8+ ：</p>
+<ul>
+<li>由于 IE8 是 ES3，需要引入 ES5 的 <code>polyfill</code>: <code>es5-shim</code>, <code>es5-sham</code>；</li>
+<li>引入 Promise 的 <code>polyfill</code>: <code>es6-promise</code>；</li>
+<li>引入 fetch 探测库：fetch-detector；</li>
+<li>引入 fetch 的 polyfill: fetch-ie8；</li>
+<li>可选：如果你还使用了 jsonp，引入 fetch-jsonp；</li>
+</ul>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>fetch 支持 HTTP 方法，下面主要用例子讲解 POST 和 GET 的请求。<br><strong>HTML 请求：</strong><br><figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">fetch(<span class="string">'/users.html'</span>)</div><div class="line">  .<span class="keyword">then</span>(<span class="function"><span class="keyword">function</span><span class="params">(response)</span></span> &#123;</div><div class="line">    <span class="keyword">return</span> response.text()</div><div class="line">  &#125;).<span class="keyword">then</span>(<span class="function"><span class="keyword">function</span><span class="params">(body)</span></span> &#123;</div><div class="line">    document.body.innerHTML = body</div><div class="line">  &#125;)</div></pre></td></tr></table></figure></p>
+<p><strong>JSON 请求：</strong><br><figure class="highlight scilab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">fetch(<span class="string">'/users.json'</span>)</div><div class="line">  .<span class="keyword">then</span>(<span class="function"><span class="keyword">function</span><span class="params">(response)</span> &#123;</span></div><div class="line">    <span class="keyword">return</span> response.json()</div><div class="line">  &#125;).<span class="keyword">then</span>(<span class="function"><span class="keyword">function</span><span class="params">(json)</span> &#123;</span></div><div class="line">    console.<span class="built_in">log</span>(<span class="string">'parsed json'</span>, json)</div><div class="line">  &#125;).<span class="keyword">catch</span>(<span class="function"><span class="keyword">function</span><span class="params">(ex)</span> &#123;</span></div><div class="line">    console.<span class="built_in">log</span>(<span class="string">'parsing failed'</span>, ex)</div><div class="line">  &#125;)</div></pre></td></tr></table></figure></p>
+<p><strong>响应头设置：</strong><br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">fetch(<span class="string">'/users.json'</span>).<span class="keyword">then</span>(<span class="function"><span class="keyword">function</span>(<span class="title">response</span>) &#123;</span></div><div class="line">  console.<span class="built_in">log</span>(response.headers.<span class="built_in">get</span>(<span class="string">'Content-Type'</span>))</div><div class="line">  console.<span class="built_in">log</span>(response.headers.<span class="built_in">get</span>(<span class="string">'Date'</span>))</div><div class="line">  console.<span class="built_in">log</span>(response.status)</div><div class="line">  console.<span class="built_in">log</span>(response.statusText)</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p><strong>Post 表单提交：</strong><br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">var</span> <span class="selector-tag">form</span> = document.querySelector(<span class="string">'form'</span>)</div><div class="line"></div><div class="line">fetch(<span class="string">'/users'</span>, &#123;</div><div class="line">  method: <span class="string">'POST'</span>,</div><div class="line">  <span class="selector-tag">body</span>: new FormData(form)</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p><strong>Post JSON：</strong><br><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">fetch</span>(<span class="string">'/users'</span>, &#123;</div><div class="line">  <span class="attribute">method</span>: <span class="string">'POST'</span>,</div><div class="line">  <span class="attribute">headers</span>: &#123;</div><div class="line">    <span class="string">'Accept'</span>: <span class="string">'application/json'</span>,</div><div class="line">    <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attribute">body</span>: JSON.stringify(&#123;</div><div class="line">    <span class="attribute">name</span>: <span class="string">'Hubot'</span>,</div><div class="line">    <span class="attribute">login</span>: <span class="string">'hubot'</span>,</div><div class="line">  &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p><strong>上传文件：</strong><br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">var</span> <span class="selector-tag">input</span> = document.querySelector(<span class="string">'input[type="file"]'</span>)</div><div class="line"></div><div class="line"><span class="selector-tag">var</span> data = new FormData()</div><div class="line">data.append(<span class="string">'file'</span>, <span class="selector-tag">input</span><span class="selector-class">.files</span>[<span class="number">0</span>])</div><div class="line">data.append(<span class="string">'user'</span>, <span class="string">'hubot'</span>)</div><div class="line"></div><div class="line">fetch(<span class="string">'/avatars'</span>, &#123;</div><div class="line">  method: <span class="string">'POST'</span>,</div><div class="line">  <span class="selector-tag">body</span>: data</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<h2 id="使用注意："><a href="#使用注意：" class="headerlink" title="使用注意："></a>使用注意：</h2><ul>
+<li>Fetch 请求默认是不带 cookie 的，需要设置 <code>fetch(url, {credentials: &#39;include&#39;})</code></li>
+<li>服务器返回 400，500 错误码时并不会 reject，只有网络错误这些导致请求不能完成时，fetch 才会被 reject。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;XMLHttpRequest 是一个设计粗糙的 API，不符合关注分离（Separation of Concerns）的原则，配置和调用方式非常混乱，而且基于事件的异步模型写起来也没有现代的 Promise，generator/yield，async/await 友好。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="fetch" scheme="http://blog.lengziyu.com/categories/fetch/"/>
+    
+    
+      <category term="fetch" scheme="http://blog.lengziyu.com/tags/fetch/"/>
+    
+  </entry>
   
   <entry>
     <title>React 操作真实 DOM</title>
