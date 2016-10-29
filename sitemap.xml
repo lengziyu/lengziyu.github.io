@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.lengziyu.com/2016/10/17/ES6-to-let-and-const/</loc>
+    
+    <lastmod>2016-10-29T14:59:23.565Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.lengziyu.com/2016/10/20/react-use-dmo-refs/</loc>
     
     <lastmod>2016-10-24T14:24:15.015Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://blog.lengziyu.com/2016/10/18/react-to-biaodan/</loc>
     
     <lastmod>2016-10-18T14:06:59.442Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.lengziyu.com/2016/10/17/ES6-to-let-and-const/</loc>
-    
-    <lastmod>2016-10-17T14:18:56.168Z</lastmod>
     
   </url>
   
