@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.lengziyu.com/2016/11/03/linux-nodejs/</loc>
+    
+    <lastmod>2016-11-03T13:41:04.691Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.lengziyu.com/2016/10/17/ES6-to-let-and-const/</loc>
     
     <lastmod>2016-10-29T14:59:23.565Z</lastmod>
