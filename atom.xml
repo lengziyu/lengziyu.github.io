@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.lengziyu.com/"/>
-  <updated>2016-11-03T13:41:04.691Z</updated>
+  <updated>2016-11-05T09:58:36.170Z</updated>
   <id>http://blog.lengziyu.com/</id>
   
   <author>
@@ -14,6 +14,62 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MongoDB 学习笔记</title>
+    <link href="http://blog.lengziyu.com/2016/11/05/MongoDB-learn-note/"/>
+    <id>http://blog.lengziyu.com/2016/11/05/MongoDB-learn-note/</id>
+    <published>2016-11-05T09:15:25.000Z</published>
+    <updated>2016-11-05T09:58:36.170Z</updated>
+    
+    <content type="html"><![CDATA[<p>简介：MongoDB 是由C++语言编写的，是一个基于分布式文件存储的开源数据库系统。在高负载的情况下，添加更多的节点，可以保证服务器性能。旨在为WEB应用提供可扩展的高性能数据存储解决方案。<br><a id="more"></a></p>
+<h2 id="常用shell"><a href="#常用shell" class="headerlink" title="常用shell"></a>常用shell</h2><p>开启服务：<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">net</span> <span class="built_in">start</span> MongoDB</div></pre></td></tr></table></figure></p>
+<p>停止服务：<br><figure class="highlight arduino"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ net <span class="built_in">stop</span> MongoDB</div></pre></td></tr></table></figure></p>
+<p>删除服务：<br><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ "D:<span class="symbol">\M</span>ongoDB<span class="symbol">\b</span>in<span class="symbol">\S</span>erver<span class="symbol">\3</span>.2<span class="symbol">\m</span>ongod.exe" --remove</div></pre></td></tr></table></figure></p>
+<h2 id="简单操作"><a href="#简单操作" class="headerlink" title="简单操作"></a>简单操作</h2><p>命令用于查看当前操作的文档（数据库）：<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt; <span class="keyword">db</span>          <span class="comment">//显示当前数据库对象或集合</span></div><div class="line">&gt; show dbs     <span class="comment">//显示所有数据的列表</span></div><div class="line">&gt; <span class="keyword">use</span> <span class="keyword">test</span>    <span class="comment">//运行"use"命令，可以连接到一个指定的数据库，这里连接到test数据库，如果连接的不存在，则自动新建</span></div><div class="line">&gt; <span class="keyword">db</span>.runoob.insert(&#123;<span class="string">"name"</span>:<span class="string">"lengziyu"</span>&#125;) <span class="comment">//向 runoob 数据库插入一些数据</span></div><div class="line">&gt; <span class="keyword">db</span>.dropDatabase()   <span class="comment">//删除当前数据库</span></div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;简介：MongoDB 是由C++语言编写的，是一个基于分布式文件存储的开源数据库系统。在高负载的情况下，添加更多的节点，可以保证服务器性能。旨在为WEB应用提供可扩展的高性能数据存储解决方案。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="mongodb" scheme="http://blog.lengziyu.com/tags/mongodb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在win7上安装MongoDB</title>
+    <link href="http://blog.lengziyu.com/2016/11/05/MongoDB-install-for-windows/"/>
+    <id>http://blog.lengziyu.com/2016/11/05/MongoDB-install-for-windows/</id>
+    <published>2016-11-05T09:14:45.000Z</published>
+    <updated>2016-11-05T09:44:05.563Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近用了一星期linux，感觉需要学习一门后端语言和一个数据库。暂时选定nodejs和MongoDB。<br><a id="more"></a></p>
+<h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><p>官网下载地址：<a href="https://www.mongodb.com/download-center#community" target="_blank" rel="external">https://www.mongodb.com/download-center#community</a><br>老是提示下载不了，附百度云盘下载：<a href="http://pan.baidu.com/s/1c2KFwGC" target="_blank" rel="external">http://pan.baidu.com/s/1c2KFwGC</a> 密码:7vu0<br>安装过程中我选择<code>D:\MongoDB</code>安装目录，傻瓜式安装完成。</p>
+<p><strong>打开管理员命令提示</strong><br>需要通过管理员模式的命令提示符，来执行安装命令。<br>管理员打开cmd输入以下命令：<br>在MongoDB文件下创建<code>data\db</code>：<br><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir D:<span class="symbol">\M</span>ongoDB<span class="symbol">\d</span>ata<span class="symbol">\d</span>b</div></pre></td></tr></table></figure></p>
+<p>MongoDB需要数据目录来存储所有的数据，其默认的数据目录为<code>\data\db</code> ，可以通过mongod.exe –dbpath命令来指定MongoDB的数据目录。例如：<br><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">D:<span class="symbol">\M</span>ongoDB<span class="symbol">\S</span>erver<span class="symbol">\3</span>.2<span class="symbol">\b</span>in<span class="symbol">\m</span>ongod.exe --dbpath D:<span class="symbol">\M</span>ongoDB<span class="symbol">\d</span>ata<span class="symbol">\d</span>b</div></pre></td></tr></table></figure></p>
+<p>看到上面的提示底部出现waiting for connections 字样，则表示dbpath配置完成，且MongoDB启动成功。<br>而且此时打开资源管理器，进入MongoDB的dbpath目录，可以看见本地确实初始化数据库了。</p>
+<h2 id="运行MongoDB"><a href="#运行MongoDB" class="headerlink" title="运行MongoDB"></a>运行MongoDB</h2><p>通过运行mongo.exe启动MongoDB。例如：<br><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">D:<span class="symbol">\M</span>ongoDB<span class="symbol">\S</span>erver<span class="symbol">\3</span>.2<span class="symbol">\b</span>in<span class="symbol">\m</span>ongo.exe</div></pre></td></tr></table></figure></p>
+<p>命令行窗口显示如下内容：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">2016-11-05T17:42:53.821+0800 I CONTROL  [main] Hotfix KB2731284 or later <span class="keyword">update</span> <span class="keyword">is</span> <span class="keyword">not</span> installed, will zero-<span class="keyword">out</span> <span class="keyword">data</span> files</div><div class="line">MongoDB shell <span class="keyword">version</span>: <span class="number">3.2</span><span class="number">.10</span></div><div class="line">commecting <span class="keyword">to</span>: <span class="keyword">test</span></div></pre></td></tr></table></figure></p>
+<p>窗口中可以看到当前MongoDB shell的版本，及此时连接的数据库。</p>
+<h2 id="设置全局path变量"><a href="#设置全局path变量" class="headerlink" title="设置全局path变量"></a>设置全局path变量</h2><p>在计算机右键 ==&gt; 属性 ==&gt; 高级系统设置 ==&gt; 环境变量 ==&gt; 选择Path编辑 ==&gt;<br>在最后面加<code>;</code>然后添加你安装的路径:<code>D:\MongoDB\Server\3.2\bin\mongo.exe</code><br>确定保存。<br>然后在cmd上输入：<br><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">mongo</span></div></pre></td></tr></table></figure></p>
+<p>此时会出现：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">2016-11-05T17:42:53.821+0800 I CONTROL  [main] Hotfix KB2731284 or later <span class="keyword">update</span> <span class="keyword">is</span> <span class="keyword">not</span> installed, will zero-<span class="keyword">out</span> <span class="keyword">data</span> files</div><div class="line">MongoDB shell <span class="keyword">version</span>: <span class="number">3.2</span><span class="number">.10</span></div><div class="line">connecting <span class="keyword">to</span>: <span class="keyword">test</span></div></pre></td></tr></table></figure></p>
+<p>恭喜你，说明安装完成！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近用了一星期linux，感觉需要学习一门后端语言和一个数据库。暂时选定nodejs和MongoDB。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="mongodb" scheme="http://blog.lengziyu.com/tags/mongodb/"/>
+    
+  </entry>
   
   <entry>
     <title>在 Linux 服务器上安装 node [搭建内部npm]</title>
