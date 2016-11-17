@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.lengziyu.com/2016/11/17/node-use-fs-modules/</loc>
+    
+    <lastmod>2016-11-17T13:49:42.020Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.lengziyu.com/2016/11/05/MongoDB-learn-note/</loc>
     
     <lastmod>2016-11-05T09:58:36.170Z</lastmod>
