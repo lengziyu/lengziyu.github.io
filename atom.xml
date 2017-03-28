@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.lengziyu.com/"/>
-  <updated>2017-01-02T14:02:45.651Z</updated>
+  <updated>2017-03-28T13:01:45.546Z</updated>
   <id>http://blog.lengziyu.com/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于最近</title>
+    <link href="http://blog.lengziyu.com/2017/03/28/about-lately/"/>
+    <id>http://blog.lengziyu.com/2017/03/28/about-lately/</id>
+    <published>2017-03-28T12:55:19.000Z</published>
+    <updated>2017-03-28T13:01:45.546Z</updated>
+    
+    <content type="html"><![CDATA[<p>忙于工作的原因，好久没写文章，新东西也没太多关注了。<br><a id="more"></a><br>其实都是借口吧，虽然天天加班，周末挤一挤时间还是有滴。<br>工作的驱动，对于JavaScript的使用又有新的认识，等忙完这段时间再放松放松写写文章吧。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;忙于工作的原因，好久没写文章，新东西也没太多关注了。&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>回顾我的2016</title>
@@ -326,9 +345,9 @@
     </summary>
     
     
-      <category term="node" scheme="http://blog.lengziyu.com/tags/node/"/>
-    
       <category term="linux" scheme="http://blog.lengziyu.com/tags/linux/"/>
+    
+      <category term="node" scheme="http://blog.lengziyu.com/tags/node/"/>
     
   </entry>
   
