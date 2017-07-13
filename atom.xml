@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.lengziyu.com/"/>
-  <updated>2017-03-28T13:01:45.546Z</updated>
+  <updated>2017-07-13T03:22:28.286Z</updated>
   <id>http://blog.lengziyu.com/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>谈谈这几个月发生的变故。</title>
+    <link href="http://blog.lengziyu.com/2017/07/13/%E8%B0%88%E8%B0%88%E8%BF%99%E5%87%A0%E4%B8%AA%E6%9C%88%E5%8F%91%E7%94%9F%E7%9A%84%E5%8F%98%E6%95%85/"/>
+    <id>http://blog.lengziyu.com/2017/07/13/谈谈这几个月发生的变故/</id>
+    <published>2017-07-13T03:02:38.000Z</published>
+    <updated>2017-07-13T03:22:28.286Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="离职"><a href="#离职" class="headerlink" title="离职"></a>离职</h2><p>始终，于6月份离职了。尽管已过去一个多月，依然感觉到自由的气息。<br><br>因为之前加班是常态，睡眠总感觉不足，所以足足睡了一个星期。撸撸猫，看看电影，过着悠闲的日子。</p>
+<h2 id="游玩"><a href="#游玩" class="headerlink" title="游玩"></a>游玩</h2><p>深圳南澳三天–待家两周考试–成都六天–武汉四天–end <br><br>然后听说有个同学6月10号生日，便约8个玩得好的同学，一起去深圳南澳沙滩玩。<br><br>接着遇到两周周末考试（参加成人高考，考个专科），复习随堂作业，打打游戏，很快两星期又过去了。<br><br>其实，这次离职重要是任性一把，想去个陌生的地方玩玩。<br><br>于是鼓起勇气定了去往成都的机票，网上查了“简途”跟团比较靠谱点，顺便定了3天2夜去往九寨沟的票。<br><br>第一次出省还是一个人去，既兴奋又有点顾虑。<br><br>接着发生很多的第一次：</p>
+<ul>
+<li>第一次坐飞机</li>
+<li>第一次住青年旅馆</li>
+<li>第一次和外国人简单交流</li>
+<li>第一次搭讪女生一起逛景区吃饭</li>
+<li>第一次亲临江山如画的九寨沟风景区</li>
+<li>第一次去往异地毫无目的的游玩像流浪的感觉</li>
+<li>第一次见加了几年QQ好友，既熟悉又陌生的网友<br><br>…</li>
+</ul>
+<h2 id="找工作"><a href="#找工作" class="headerlink" title="找工作"></a>找工作</h2><p>转眼到了7月，开始在【boss直聘】上更新简历投简历，面试了几家都不靠谱。要么福利不齐全，要么环境不好。<br></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;离职&quot;&gt;&lt;a href=&quot;#离职&quot; class=&quot;headerlink&quot; title=&quot;离职&quot;&gt;&lt;/a&gt;离职&lt;/h2&gt;&lt;p&gt;始终，于6月份离职了。尽管已过去一个多月，依然感觉到自由的气息。&lt;br&gt;&lt;br&gt;因为之前加班是常态，睡眠总感觉不足，所以足足睡了一个星期。撸
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="http://blog.lengziyu.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>关于最近</title>
@@ -854,33 +886,6 @@
     
     
       <category term="webpack" scheme="http://blog.lengziyu.com/tags/webpack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://blog.lengziyu.com/2016/10/08/hello-world/"/>
-    <id>http://blog.lengziyu.com/2016/10/08/hello-world/</id>
-    <published>2016-10-08T10:57:39.537Z</published>
-    <updated>2016-10-10T11:17:37.833Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-    
-    </summary>
-    
     
   </entry>
   
